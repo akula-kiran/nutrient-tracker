@@ -24,8 +24,8 @@ function Register(){
 
     function handleSubmit(event){
          event.preventDefault();
-     //console.log(userDetails);
-     fetch("http://localhost:8000/register",{
+     console.log(userDetails);
+     fetch("http://localhost:8576/register",{
         method:"POST",
         body:JSON.stringify(userDetails),
         headers:{

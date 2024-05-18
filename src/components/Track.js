@@ -20,7 +20,7 @@ function Track(){
     function searchFood(event){
         if(event.target.value.length!==0)
         {
-       fetch(`http://localhost:8000/foods/${event.target.value}`,{
+       fetch(`http://localhost:8576/foods/${event.target.value}`,{
         method:"GET",
         headers:{
             "Authorization":"Bearer "+loggedData.loggedUser.token

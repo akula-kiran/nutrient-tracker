@@ -22,7 +22,7 @@ export default function Diet()
 
     useEffect(()=>{
 
-        fetch(`http://localhost:8000/track/${loggedData.loggedUser.userid}/${date.getMonth()+1}-${date.getDate()}-${date.getFullYear()}`,{
+        fetch(`http://localhost:8576/track/${loggedData.loggedUser.userid}/${date.getMonth()+1}-${date.getDate()}-${date.getFullYear()}`,{
             method:"GET",
             headers:{
                 "Authorization":`Bearer ${loggedData.loggedUser.token}`
@@ -107,14 +107,6 @@ export default function Diet()
             <p>Protein {total.totalProtein}g, Carbs {total.totalCarbs}g, Fats {total.totalFats}g, Fiber {total.totalFiber}g</p>
 
         </div>
-
-
-                
-
-
-
-
-
         </section>
         </div>
     )

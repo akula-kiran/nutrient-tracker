@@ -17,6 +17,7 @@ function Header(){
             <Link to="/home"> <li>Home</li></Link>
                <Link to="/track"> <li>Track</li></Link>
                <Link to="/diet"> <li>Diet</li></Link>
+               <Link to="/contact"><li>Contact Us</li></Link>
                 
             </ul>
             <button class="btn header-btn" onClick={logout}>Log out</button>
